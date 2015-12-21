@@ -14,13 +14,13 @@ Add this to your composer.json file, in the require object:
 "mmanos/laravel-metable": "dev-master"
 ```
 
-Add the `tightenco` version in your composer `repositories` block:
+Add the `sumityadav` version in your composer `repositories` block:
 
 ```json
     "repositories": [
         {
             "type": "vcs",
-            "url": "https://github.com/tightenco/laravel-metable"
+            "url": "https://github.com/sumityadav/laravel-metable"
         }
     ],
 ```
@@ -148,7 +148,7 @@ To see if a piece of content has a meta:
 
 ```php
 if ($user->hasMeta('employer')) {
-	
+
 }
 ```
 
@@ -275,7 +275,7 @@ class Meta extends Eloquent
 	{
 		$query->where('company_id', $context->id);
 	}
-	
+
 	public static function applyModelContext($model, $context)
 	{
 		$model->company_id = $context->id;
